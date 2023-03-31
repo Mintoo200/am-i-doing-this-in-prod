@@ -109,4 +109,9 @@ function onUrlChangeOnSpa() {
   addOrRemoveRibbon(savedConfig)
 }
 
+const importData = (event) => {
+  console.log('to import >')
+  console.log(event.detail)
+}
+document.addEventListener('am_i_doing_this_in_prod_custom_event_import', importData)
 document.addEventListener('plugin_loaded', init)
